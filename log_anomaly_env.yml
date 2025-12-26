@@ -1,0 +1,14 @@
+name: log_anomaly_env
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - scikit-learn
+  # Librerías grandes de IA (se instalarán en Colab, no en tu máquina)
+  - pip
+  - pip:
+    - torch
+    - transformers
